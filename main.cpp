@@ -4,14 +4,15 @@
  
  To test from Mac terminal use
  screen /dev/tty.usbmodem14102 9600 
+
+ The main project files are at https://github.com/CT-42210/science_on_a_sphere
  */
 
 #include "mbed.h"
 #include "platform/mbed_thread.h"
-
+#include "stdio.h"
 // Blinking rate in milliseconds
 #define BLINKING_RATE_MS 100
-
 DigitalOut heartbeat(LED1); 
 BusOut reds(p17,p18,p19,p20);
 BusOut blus(p24,p23,p22,p21);
